@@ -1,0 +1,15 @@
+{
+  "name": "typescript-simplified",
+  "version": "1.0.0",
+  "description": "learn to build scalable projects with TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.3.2"
+  }
+}
