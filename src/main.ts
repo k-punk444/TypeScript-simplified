@@ -1,1 +1,2 @@
-console.log("Hi");
+let a:undefined = undefined;
+a = undefined;
