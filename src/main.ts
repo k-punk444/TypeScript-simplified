@@ -13,3 +13,11 @@ c = 'string';
 const d = fetch('anything').then(res => res.json()).then(data => {
   data // data: any
 })
+
+//Object Basics
+const person: { name: string; age: number; isProgrammer?: boolean; } = {
+  name: "Kai",
+  age: 30,
+  // person.isProgrammer = true;
+};
+// person.isProgrammer = true;
