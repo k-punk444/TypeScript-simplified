@@ -1,2 +1,2 @@
 # TypeScript-simplified
- learn to build scalable projects with TypeScript
+The record of learn to build scalable projects with TypeScript
