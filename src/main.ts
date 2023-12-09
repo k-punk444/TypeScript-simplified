@@ -15,3 +15,8 @@ function sum(a: number, b: number) {
 }
 
 const c1 =sum(1, 2);
+
+// Void Type
+function printName(name: string): void {
+  console.log(name)
+}
