@@ -20,3 +20,10 @@ const c1 =sum(1, 2);
 function printName(name: string): void {
   console.log(name)
 }
+
+// Optional Parameters
+function printNameAndAge(name:string, options?: { debugMode: boolean })  {
+  console.log(name, options)
+}
+
+printNameAndAge('kai', { debugMode: true })
