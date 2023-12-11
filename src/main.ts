@@ -10,9 +10,9 @@ function printPerson(person: { name: string }) {
 
 printPerson({ name: "Kyle"})
 
-function sum(a: number, b: number) {
-  return a + b
-}
+// function sum(a: number, b: number) {
+//   return a + b
+// }
 
 const c1 =sum(1, 2);
 
@@ -22,8 +22,31 @@ function printName(name: string): void {
 }
 
 // Optional Parameters
-function printNameAndAge(name:string, options?: { debugMode: boolean })  {
-  console.log(name, options)
+// function printNameAndAge(name:string, options?: { debugMode: boolean })  {
+//   console.log(name, options)
+// }
+
+// printNameAndAge('kai', { debugMode: true })
+
+// Destructured And Rest Parameters
+type Options = {
+  debugMode?: boolean
+  indentLevel?: number
 }
 
-printNameAndAge('kai', { debugMode: true })
+function printNameAndAge(
+  name:string,
+   { debugMode = false, indentLevel }: Option = {}
+  ) {
+  console.log(name, debugMode, indentLevel)
+}
+
+printNameAndAge('kai')
+
+// Rest Parameters
+function sum(...nums: number[]) {
+  return // code to add them
+}
+
+sum(1, 2, 4)
+sum(1, 2)
