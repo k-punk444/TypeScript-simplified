@@ -28,7 +28,7 @@ function printName(name: string): void {
 
 // printNameAndAge('kai', { debugMode: true })
 
-// Destructured And Rest Parameters
+// Destructured
 type Options = {
   debugMode?: boolean
   indentLevel?: number
@@ -50,3 +50,17 @@ function sum(...nums: number[]) {
 
 sum(1, 2, 4)
 sum(1, 2)
+
+// Typing Variables As Functions
+function sumWithCallback(a: number, b: number, cb: (sum: number) => void) {
+  cb(a + b)
+}
+
+sumWithCallback(1, 2, (sum) => {
+  console.log(sum)
+})
+
+type PrintNameFunc = (name: string) => void
+function f(name: string) {
+  return 2
+}
