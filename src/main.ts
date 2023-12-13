@@ -14,3 +14,19 @@ type Todo = {
 }
 
 const todo: Todo = { name: "Laundry", status: "Complete" };
+
+// Intersections
+interface Person3 {
+  name: string
+  age: number
+}
+
+interface Todo2 {
+  complete: boolean
+}
+
+interface PersonWithId extends Person, Todo {
+  id: string
+}
+
+const person: PersonWithId = { id: "ksjakfl", name: "Kai", age: 30 }
