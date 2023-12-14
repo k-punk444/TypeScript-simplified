@@ -29,4 +29,8 @@ interface PersonWithId extends Person, Todo {
   id: string
 }
 
-const person: PersonWithId = { id: "ksjakfl", name: "Kai", age: 30 }
+const person4: PersonWithId = { id: "ksjakfl", name: "Kai", age: 30 }
+// readonly
+type NumberArray = readonly number[];
+const nums: NumberArray = [1, 2, 3];
+nums[4] = 3;
