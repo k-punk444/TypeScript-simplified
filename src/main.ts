@@ -30,7 +30,25 @@ interface PersonWithId extends Person, Todo {
 }
 
 const person4: PersonWithId = { id: "ksjakfl", name: "Kai", age: 30 }
+
+
 // readonly
 type NumberArray = readonly number[];
 const nums: NumberArray = [1, 2, 3];
 nums[4] = 3;
+
+//keyof
+
+type Person4 = {
+  name: string
+  age: number
+  isProgrammer?: boolean
+}
+
+function groupBy
+
+const age = getValue("age", { name: "Kai", age: 30 })
+
+function groupBy(key: keyof Person4, people: Person4[]) {
+  return person[key]
+}
