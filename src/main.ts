@@ -45,10 +45,24 @@ type Person4 = {
   isProgrammer?: boolean
 }
 
-function groupBy
+function groupBy()
 
 const age = getValue("age", { name: "Kai", age: 30 })
 
 function groupBy(key: keyof Person4, people: Person4[]) {
   return person[key]
 }
+
+// typeof
+const person5 = { name:"Kai", age:30, isProgrammer: true }
+const people: (typeof person)[] = []
+
+people.push(person)
+people.push({ name: "Yan", age: 30})
+people.push(2)
+
+function sayHi(name: string) {
+  console.log(name)
+}
+
+type FuncType = typeof sayHi
