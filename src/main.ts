@@ -66,3 +66,22 @@ function sayHi(name: string) {
 }
 
 type FuncType = typeof sayHi
+
+// Index Types
+type Person5 = {
+  name: string
+  skillLevel: "Beginner" | "Intermediate" | "Expert" | "Master"
+}
+
+type PeopleGroupedBySkillLevel = {
+  [index: string]: Person[]
+}
+
+const k: PeopleGroupedBySkillLevel = {
+  naming: [{ name: "Kai", skillLevel: "Beginner }],
+}
+
+{
+  "Beginner": [person1, person2],
+  "Intermediate": ;
+}
